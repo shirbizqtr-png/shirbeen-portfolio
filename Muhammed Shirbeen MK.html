@@ -1,0 +1,662 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<title>Muhammed Shirbeen MK</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Source+Sans+3:wght@400;600&family=JetBrains+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: an electrical drawing sheet. Hero pairs the name with a single-line diagram and a title block; sections below read as ruled drawing notes. */
+:root {
+  --bg: #eef1f3;
+  --surface: #f8fafb;
+  --fg: #14202b;
+  --muted: #4f5f6c;
+  --line: #c3ced6;
+  --grid: rgba(18, 50, 74, 0.07);
+  --ink: #12324a;
+  --accent: #b4541f;
+  --accent-fg: #ffffff;
+  --font-display: "Barlow Condensed", "Arial Narrow", Arial, sans-serif;
+  --font-body: "Source Sans 3", "Segoe UI", Helvetica, Arial, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, "SFMono-Regular", Menlo, monospace;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #0e1b27;
+    --surface: #13263a;
+    --fg: #e6edf2;
+    --muted: #9db0bf;
+    --line: #2a4258;
+    --grid: rgba(143, 193, 227, 0.07);
+    --ink: #8fc1e3;
+    --accent: #e8914f;
+    --accent-fg: #0e1b27;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #0e1b27;
+  --surface: #13263a;
+  --fg: #e6edf2;
+  --muted: #9db0bf;
+  --line: #2a4258;
+  --grid: rgba(143, 193, 227, 0.07);
+  --ink: #8fc1e3;
+  --accent: #e8914f;
+  --accent-fg: #0e1b27;
+  color-scheme: dark;
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; scroll-padding-top: 4.5rem; }
+body {
+  background: var(--bg);
+  color: var(--fg);
+  font-family: var(--font-body);
+  font-size: 1.0625rem;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0 0 auto;
+  height: env(safe-area-inset-top, 0px);
+  background: var(--bg);
+  z-index: 30;
+}
+a { color: inherit; }
+:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+
+.wrap {
+  max-width: 72rem;
+  margin-inline: auto;
+  padding-left: max(16px, env(safe-area-inset-left, 0px));
+  padding-right: max(16px, env(safe-area-inset-right, 0px));
+}
+.eyebrow {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin: 0 0 0.75rem;
+}
+h1, h2, h3 { font-family: var(--font-display); text-wrap: balance; margin: 0; line-height: 1.02; color: var(--ink); }
+h2 { font-size: clamp(2rem, 5vw, 3rem); font-weight: 600; text-transform: uppercase; letter-spacing: 0.01em; }
+h3 { font-size: 1.35rem; font-weight: 600; letter-spacing: 0.02em; }
+p { margin: 0; }
+
+/* header */
+.site-header {
+  position: sticky;
+  top: env(safe-area-inset-top, 0px);
+  z-index: 40;
+  background: var(--bg);
+  border-bottom: 1px solid var(--line);
+}
+.site-header .wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding-block: 0.7rem;
+}
+.brand {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 1.35rem;
+  letter-spacing: 0.06em;
+  text-decoration: none;
+  color: var(--ink);
+  white-space: nowrap;
+}
+.brand span { color: var(--accent); }
+.nav { display: flex; gap: 1.25rem; flex-wrap: wrap; justify-content: flex-end; }
+.nav a {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--muted);
+  padding-block: 0.25rem;
+}
+.nav a:hover { color: var(--accent); }
+
+/* hero */
+.hero {
+  background-image:
+    linear-gradient(var(--grid) 1px, transparent 1px),
+    linear-gradient(90deg, var(--grid) 1px, transparent 1px);
+  background-size: 32px 32px;
+  border-bottom: 1px solid var(--line);
+}
+.hero .wrap {
+  display: grid;
+  grid-template-columns: minmax(0, 1.05fr) minmax(0, 0.95fr);
+  gap: clamp(1.5rem, 4vw, 3.5rem);
+  align-items: center;
+  padding-block: clamp(2.25rem, 6vw, 4.5rem);
+}
+.hero-copy { min-width: 0; display: flex; flex-direction: column; gap: 1.25rem; }
+.hero h1 {
+  font-size: clamp(3rem, 9vw, 5.75rem);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.005em;
+}
+.role {
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+.lede { max-width: 38rem; color: var(--fg); font-size: 1.15rem; }
+.cta-row { display: flex; flex-wrap: wrap; gap: 0.75rem; margin-top: 0.25rem; }
+.btn {
+  display: inline-block;
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 0.8rem 1.2rem;
+  border: 1px solid var(--ink);
+  color: var(--ink);
+  background: transparent;
+  cursor: pointer;
+}
+.btn:hover { border-color: var(--accent); color: var(--accent); }
+.btn.primary { background: var(--accent); border-color: var(--accent); color: var(--accent-fg); }
+.btn.primary:hover { filter: brightness(1.08); color: var(--accent-fg); }
+
+.sheet { min-width: 0; border: 1px solid var(--ink); background: var(--surface); }
+.sheet svg { display: block; width: 100%; height: auto; }
+.sld-line { stroke: var(--ink); stroke-width: 1.6; fill: none; stroke-linecap: square; }
+.sld-fill { fill: var(--surface); stroke: var(--ink); stroke-width: 1.6; }
+.sld-bus { stroke: var(--accent); stroke-width: 6; fill: none; }
+.sld-text { font-family: var(--font-mono); font-size: 12px; fill: var(--muted); letter-spacing: 0.06em; }
+.sld-glyph { font-family: var(--font-mono); font-size: 14px; font-weight: 500; fill: var(--ink); }
+.flow { stroke: var(--accent); stroke-width: 2; fill: none; stroke-dasharray: 3 9; animation: flow 1.4s linear infinite; }
+.earth { stroke: var(--muted); stroke-width: 1.4; fill: none; stroke-dasharray: 5 4; }
+@keyframes flow { to { stroke-dashoffset: -24; } }
+@media (prefers-reduced-motion: reduce) {
+  .flow { animation: none; }
+  html { scroll-behavior: auto; }
+}
+.titleblock {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  border-top: 1px solid var(--ink);
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+.titleblock div { padding: 0.5rem 0.75rem; border-right: 1px solid var(--line); border-bottom: 1px solid var(--line); min-width: 0; }
+.titleblock div:nth-child(2n) { border-right: 0; }
+.titleblock div:nth-last-child(-n+2) { border-bottom: 0; }
+.titleblock dt { color: var(--muted); }
+.titleblock dd { margin: 0; color: var(--ink); font-weight: 500; overflow-wrap: anywhere; }
+
+/* facts strip */
+.facts { border-bottom: 1px solid var(--line); }
+.facts dl {
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+.facts dl > div { padding: 1.5rem 1rem 1.5rem 0; }
+.facts dl > div + div { padding-left: 1.25rem; border-left: 1px solid var(--line); }
+.facts dd {
+  margin: 0;
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: clamp(2.2rem, 5vw, 3.2rem);
+  line-height: 1;
+  color: var(--ink);
+  font-variant-numeric: tabular-nums;
+}
+.facts dt {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-top: 0.45rem;
+}
+
+/* sections */
+.section { padding-block: clamp(2.75rem, 7vw, 5rem); border-bottom: 1px solid var(--line); }
+.section-head { display: flex; flex-direction: column; gap: 0.25rem; margin-bottom: clamp(1.5rem, 4vw, 2.5rem); }
+.section-head p.intro { color: var(--muted); max-width: 40rem; margin-top: 0.75rem; }
+
+.skills { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 2rem 2.5rem; }
+.skill-group { min-width: 0; border-top: 2px solid var(--ink); padding-top: 0.9rem; }
+.skill-group h3 { margin-bottom: 0.6rem; }
+.skill-group ul { list-style: none; margin: 0; padding: 0; }
+.skill-group li { padding: 0.4rem 0; border-bottom: 1px solid var(--line); font-size: 1rem; }
+.skill-group li:last-child { border-bottom: 0; }
+
+.job { display: grid; grid-template-columns: minmax(0, 13rem) minmax(0, 1fr); gap: 1rem 2.5rem; padding-block: 1.75rem; border-top: 1px solid var(--line); }
+.job:first-of-type { border-top: 2px solid var(--ink); }
+.job-meta { font-family: var(--font-mono); font-size: 0.78rem; letter-spacing: 0.06em; text-transform: uppercase; color: var(--muted); display: flex; flex-direction: column; gap: 0.3rem; }
+.job-meta strong { color: var(--accent); font-weight: 500; }
+.job-body { min-width: 0; }
+.job-body .org { color: var(--muted); margin: 0.35rem 0 0.9rem; }
+.job-body ul { margin: 0; padding-left: 1.15rem; display: flex; flex-direction: column; gap: 0.5rem; }
+.job-body li::marker { color: var(--accent); }
+
+.filters { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 1.5rem; }
+.chip {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 0.5rem 0.85rem;
+  border: 1px solid var(--line);
+  background: transparent;
+  color: var(--muted);
+  cursor: pointer;
+}
+.chip:hover { border-color: var(--ink); color: var(--ink); }
+.chip[aria-pressed="true"] { background: var(--ink); border-color: var(--ink); color: var(--bg); }
+.projects { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1rem; list-style: none; margin: 0; padding: 0; }
+.project { background: var(--surface); border: 1px solid var(--line); padding: 1.15rem 1.15rem 1.25rem; display: flex; flex-direction: column; gap: 0.5rem; min-width: 0; }
+.project .type { font-family: var(--font-mono); font-size: 0.7rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--accent); }
+.project h3 { font-size: 1.5rem; }
+.project .place { color: var(--muted); font-size: 0.98rem; }
+
+.edu { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 2rem 2.5rem; }
+.edu article { border-top: 2px solid var(--ink); padding-top: 0.9rem; min-width: 0; }
+.edu .years { font-family: var(--font-mono); font-size: 0.78rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--accent); margin-bottom: 0.5rem; }
+.edu p.sub { color: var(--muted); margin-top: 0.4rem; }
+
+.contact { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 2rem 3rem; align-items: start; }
+.contact-list { margin: 0; display: grid; gap: 0; }
+.contact-list > div { display: grid; grid-template-columns: 6.5rem minmax(0, 1fr) auto; gap: 0.75rem; align-items: center; padding: 0.9rem 0; border-top: 1px solid var(--line); }
+.contact-list > div:last-child { border-bottom: 1px solid var(--line); }
+.contact-list dt { font-family: var(--font-mono); font-size: 0.72rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--muted); }
+.contact-list dd { margin: 0; min-width: 0; overflow-wrap: anywhere; }
+.copy {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  border: 1px solid var(--line);
+  background: transparent;
+  color: var(--ink);
+  padding: 0.35rem 0.6rem;
+  cursor: pointer;
+}
+.copy:hover { border-color: var(--accent); color: var(--accent); }
+
+footer { padding-block: 1.75rem 2.5rem; font-family: var(--font-mono); font-size: 0.72rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); }
+footer .wrap { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 0.5rem 1.5rem; }
+
+@media (max-width: 900px) {
+  .hero .wrap { grid-template-columns: minmax(0, 1fr); }
+  .skills, .projects { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .contact { grid-template-columns: minmax(0, 1fr); }
+}
+@media (max-width: 640px) {
+  .nav { display: none; }
+  .facts dl { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .facts dl > div:nth-child(3) { padding-left: 0; border-left: 0; }
+  .facts dl > div:nth-child(n+3) { border-top: 1px solid var(--line); }
+  .skills, .projects, .edu { grid-template-columns: minmax(0, 1fr); }
+  .job { grid-template-columns: minmax(0, 1fr); gap: 0.75rem; }
+  .contact-list > div { grid-template-columns: minmax(0, 1fr) auto; }
+  .contact-list dt { grid-column: 1 / -1; }
+}
+</style>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="Muhammed Shirbeen MK, top of page">M. SHIRBEEN <span>/</span> EE</a>
+    <nav class="nav" aria-label="Sections">
+      <a href="#expertise">Expertise</a>
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="#education">Education</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero">
+    <div class="wrap">
+      <div class="hero-copy">
+        <p class="eyebrow">Electrical Design Engineer · Kerala, India</p>
+        <h1>Muhammed Shirbeen MK</h1>
+        <p class="role">HT/LT Systems · Panels · Earthing &amp; Lightning Protection</p>
+        <p class="lede">Electrical system design engineer with more than three years in HT/LT installations, power distribution and control panel design. I produce load calculations, cable sizing, single line diagrams and BOQs that meet IEC, IS and Indian Electricity Rules, and I follow them through to site.</p>
+        <div class="cta-row">
+          <a class="btn primary" href="#projects">View projects</a>
+          <a class="btn" href="#contact">Get in touch</a>
+        </div>
+      </div>
+
+      <figure class="sheet" style="margin:0">
+        <svg viewBox="0 0 520 400" role="img" aria-label="Single line diagram: HT incomer, transformer, LT panel busbar feeding a motor control centre, lighting distribution board, solar PV and a control panel, with an earth connection">
+          <!-- earth bonding (dashed) -->
+          <path class="earth" d="M242 147 H40 V300"/>
+          <path class="sld-line" d="M26 300 H54 M31 308 H49 M36 316 H44"/>
+          <text class="sld-text" x="40" y="344" text-anchor="middle">EARTH</text>
+
+          <!-- HT incomer -->
+          <path class="sld-line" d="M260 14 V68"/>
+          <rect class="sld-fill" x="252" y="68" width="16" height="18"/>
+          <path class="sld-line" d="M260 86 V117"/>
+          <text class="sld-text" x="276" y="40">HT INCOMER</text>
+          <text class="sld-text" x="276" y="82">VCB</text>
+
+          <!-- transformer -->
+          <circle class="sld-fill" cx="260" cy="135" r="18"/>
+          <circle class="sld-fill" cx="260" cy="159" r="18" style="fill:none"/>
+          <text class="sld-text" x="288" y="150">TRANSFORMER</text>
+          <path class="sld-line" d="M260 177 V212"/>
+
+          <!-- LT busbar -->
+          <path class="sld-bus" d="M70 215 H450"/>
+          <text class="sld-text" x="70" y="202">LT PANEL · PCC</text>
+
+          <!-- feeders -->
+          <g>
+            <path class="sld-line" d="M100 218 V240"/><rect class="sld-fill" x="94" y="240" width="12" height="14"/><path class="sld-line" d="M100 254 V290"/>
+            <path class="flow" d="M100 221 V290"/>
+            <circle class="sld-fill" cx="100" cy="306" r="16"/><text class="sld-glyph" x="100" y="311" text-anchor="middle">M</text>
+            <text class="sld-text" x="100" y="348" text-anchor="middle">MCC</text>
+          </g>
+          <g>
+            <path class="sld-line" d="M200 218 V240"/><rect class="sld-fill" x="194" y="240" width="12" height="14"/><path class="sld-line" d="M200 254 V290"/>
+            <path class="flow" d="M200 221 V290"/>
+            <circle class="sld-fill" cx="200" cy="306" r="16"/><path class="sld-line" d="M189 295 L211 317 M211 295 L189 317"/>
+            <text class="sld-text" x="200" y="348" text-anchor="middle">LIGHTING DB</text>
+          </g>
+          <g>
+            <path class="sld-line" d="M320 218 V240"/><rect class="sld-fill" x="314" y="240" width="12" height="14"/><path class="sld-line" d="M320 254 V290"/>
+            <path class="flow" d="M320 221 V290"/>
+            <rect class="sld-fill" x="304" y="290" width="32" height="32"/><path class="sld-line" d="M304 322 L336 290 M312 306 q4 -6 8 0 t8 0"/>
+            <text class="sld-text" x="320" y="348" text-anchor="middle">SOLAR PV</text>
+          </g>
+          <g>
+            <path class="sld-line" d="M420 218 V240"/><rect class="sld-fill" x="414" y="240" width="12" height="14"/><path class="sld-line" d="M420 254 V290"/>
+            <path class="flow" d="M420 221 V290"/>
+            <rect class="sld-fill" x="400" y="290" width="40" height="32"/><text class="sld-glyph" x="420" y="311" text-anchor="middle" style="font-size:11px">PLC</text>
+            <text class="sld-text" x="420" y="348" text-anchor="middle">CONTROL</text>
+          </g>
+          <text class="sld-text" x="500" y="388" text-anchor="end" style="font-size:10px">SCHEMATIC · NOT TO SCALE</text>
+        </svg>
+        <dl class="titleblock" style="margin:0">
+          <div><dt>Drawing</dt><dd>SLD-01</dd></div>
+          <div><dt>Discipline</dt><dd>Electrical</dd></div>
+          <div><dt>Designed by</dt><dd>M. Shirbeen</dd></div>
+          <div><dt>Rev</dt><dd>A · Oct 2026</dd></div>
+        </dl>
+      </figure>
+    </div>
+  </section>
+
+  <section class="facts" aria-label="At a glance">
+    <div class="wrap">
+      <dl>
+        <div><dd>3+</dd><dt>Years in design</dt></div>
+        <div><dd>9</dd><dt>Recent HT/LT projects</dt></div>
+        <div><dd>IEC · IS</dd><dt>Design standards</dt></div>
+        <div><dd>2025</dd><dt>B.Tech, EEE</dt></div>
+      </dl>
+    </div>
+  </section>
+
+  <section class="section" id="expertise">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">Expertise</p>
+        <h2>What I design</h2>
+        <p class="intro">From the incoming HT supply to the last motor starter, with the calculations and drawings a contractor can build from.</p>
+      </div>
+      <div class="skills">
+        <div class="skill-group">
+          <h3>Power distribution</h3>
+          <ul>
+            <li>HT/LT electrical installations</li>
+            <li>Load calculation and cable sizing</li>
+            <li>Load flow and fault current analysis</li>
+            <li>Renewable and solar power integration</li>
+          </ul>
+        </div>
+        <div class="skill-group">
+          <h3>Panels and control</h3>
+          <ul>
+            <li>Control panels, MCC and PCC</li>
+            <li>Motor control circuits</li>
+            <li>Panel schematics and schedules</li>
+            <li>Basic SCADA and PLC programming</li>
+          </ul>
+        </div>
+        <div class="skill-group">
+          <h3>Safety and protection</h3>
+          <ul>
+            <li>Earthing conductor and grounding layouts</li>
+            <li>Lightning protection design</li>
+            <li>Risk assessment and root cause analysis</li>
+            <li>Failure testing for reliability</li>
+          </ul>
+        </div>
+        <div class="skill-group">
+          <h3>Deliverables</h3>
+          <ul>
+            <li>Single line diagrams (SLD)</li>
+            <li>Bills of quantities (BOQ)</li>
+            <li>Cable layouts and panel schedules</li>
+            <li>Technical documentation</li>
+          </ul>
+        </div>
+        <div class="skill-group">
+          <h3>Software</h3>
+          <ul>
+            <li>AutoCAD Electrical</li>
+            <li>MATLAB and Simulink</li>
+            <li>DIALux</li>
+            <li>Microsoft Office</li>
+          </ul>
+        </div>
+        <div class="skill-group">
+          <h3>Codes and standards</h3>
+          <ul>
+            <li>IEC standards</li>
+            <li>IS (Bureau of Indian Standards)</li>
+            <li>Indian Electricity Rules</li>
+            <li>Client coordination and site supervision</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="experience">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">Experience</p>
+        <h2>Where I have worked</h2>
+      </div>
+
+      <article class="job">
+        <div class="job-meta">
+          <strong>Apr 2025 – Present</strong>
+          <span>Malappuram, Kerala</span>
+        </div>
+        <div class="job-body">
+          <h3>Electrical Design Engineer</h3>
+          <p class="org">4SAFE Associates, Engineers &amp; Contractors (Class A)</p>
+          <ul>
+            <li>Design and execute HT/LT installations, preparing SLDs, BOQs, panel schedules and cable layouts.</li>
+            <li>Develop load flow analysis, fault current calculations and earthing and grounding layouts.</li>
+            <li>Coordinate with project teams on site execution, inspection and quality checks.</li>
+            <li>Prepare technical documentation to meet project and compliance standards.</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="job">
+        <div class="job-meta">
+          <strong>May 2021 – Aug 2022</strong>
+          <span>Malappuram, Kerala</span>
+        </div>
+        <div class="job-body">
+          <h3>Electrical Design Engineer</h3>
+          <p class="org">4SAFE Associates, Engineers &amp; Contractors (Class A)</p>
+          <ul>
+            <li>Designed electrical circuits, control panels, MCCs, PCCs and motor control systems in AutoCAD Electrical.</li>
+            <li>Planned power distribution systems, renewable energy integration and load calculations for residential, commercial and industrial projects.</li>
+            <li>Designed earthing and lightning protection systems in line with IEC and IS standards.</li>
+            <li>Ran failure testing, risk assessment and root cause analysis to improve reliability and safety.</li>
+            <li>Applied basic SCADA and PLC programming to automation and monitoring tasks.</li>
+            <li>Used MATLAB to simulate and optimise electrical systems.</li>
+          </ul>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section class="section" id="projects">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">Projects</p>
+        <h2>Recent HT/LT designs</h2>
+        <p class="intro">Hospitals, schools, retail, industry and housing across Kerala and Tamil Nadu.</p>
+      </div>
+
+      <div class="filters" role="group" aria-label="Filter projects by sector">
+        <button type="button" class="chip" data-filter="all" aria-pressed="true" id="f-all">All 9</button>
+        <button type="button" class="chip" data-filter="institutional" aria-pressed="false" id="f-inst">Institutional</button>
+        <button type="button" class="chip" data-filter="commercial" aria-pressed="false" id="f-comm">Commercial</button>
+        <button type="button" class="chip" data-filter="industrial" aria-pressed="false" id="f-ind">Industrial</button>
+        <button type="button" class="chip" data-filter="residential" aria-pressed="false" id="f-res">Residential</button>
+      </div>
+
+      <ul class="projects" id="project-list">
+        <li class="project" data-group="institutional"><span class="type">Education</span><h3>Delhi Public School Kochi</h3><span class="place">Kochi, Kerala</span></li>
+        <li class="project" data-group="institutional"><span class="type">Healthcare</span><h3>HMS Hospital</h3><span class="place">Kottakkal, Kerala</span></li>
+        <li class="project" data-group="commercial"><span class="type">Leisure</span><h3>Flora Fantasia Amusement Park</h3><span class="place">Velachery, Kerala</span></li>
+        <li class="project" data-group="commercial"><span class="type">Retail</span><h3>Yara Hyper</h3><span class="place">Erode, Tamil Nadu</span></li>
+        <li class="project" data-group="industrial"><span class="type">Industrial</span><h3>AHM Toughen Glass Industry</h3><span class="place">Valanchery, Kerala</span></li>
+        <li class="project" data-group="commercial"><span class="type">Commercial</span><h3>Noor Arcade</h3><span class="place">Tirur, Kerala</span></li>
+        <li class="project" data-group="commercial"><span class="type">Commercial</span><h3>Kaliyadan Tower</h3><span class="place">Tirur, Kerala</span></li>
+        <li class="project" data-group="residential"><span class="type">Residential</span><h3>Tirur Apartments</h3><span class="place">Tirur, Kerala</span></li>
+        <li class="project" data-group="commercial"><span class="type">Retail</span><h3>Yara Hyper</h3><span class="place">Tirurangadi, Kerala</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="section" id="education">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">Education</p>
+        <h2>Training</h2>
+      </div>
+      <div class="edu">
+        <article>
+          <p class="years">2022 – 2025 · Lateral entry</p>
+          <h3>B.Tech, Electrical and Electronics Engineering</h3>
+          <p class="sub">MES College of Engineering, Kuttippuram<br>APJ Abdul Kalam Technological University</p>
+        </article>
+        <article>
+          <p class="years">2018 – 2021</p>
+          <h3>Diploma, Electrical and Electronics Engineering</h3>
+          <p class="sub">Malabar Polytechnic College<br>DTE Kerala</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="contact" style="border-bottom:0">
+    <div class="wrap contact">
+      <div class="section-head" style="margin-bottom:0">
+        <p class="eyebrow">Contact</p>
+        <h2>Let's talk about your project</h2>
+        <p class="intro">Open to electrical design roles covering HT/LT distribution, panels and earthing. Email is the quickest way to reach me.</p>
+      </div>
+      <dl class="contact-list">
+        <div>
+          <dt>Email</dt>
+          <dd id="c-email">shirbizqtr@gmail.com</dd>
+          <button type="button" class="copy" id="copy-email" data-target="c-email">Copy</button>
+        </div>
+        <div>
+          <dt>Phone</dt>
+          <dd id="c-phone">+91 85920 78026</dd>
+          <button type="button" class="copy" id="copy-phone" data-target="c-phone">Copy</button>
+        </div>
+        <div>
+          <dt>LinkedIn</dt>
+          <dd><a href="https://www.linkedin.com/in/muhammedshirbeen-mk" target="_blank" rel="noopener">linkedin.com/in/muhammedshirbeen-mk</a></dd>
+          <span></span>
+        </div>
+        <div>
+          <dt>Based in</dt>
+          <dd>Malappuram, Kerala, India</dd>
+          <span></span>
+        </div>
+        <div>
+          <dt>Languages</dt>
+          <dd>English, Malayalam</dd>
+          <span></span>
+        </div>
+      </dl>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>Muhammed Shirbeen MK · Electrical Engineer</span>
+    <span>© 2026</span>
+  </div>
+</footer>
+
+<script>
+(function () {
+  var chips = document.querySelectorAll('.chip');
+  var cards = document.querySelectorAll('#project-list .project');
+  chips.forEach(function (chip) {
+    chip.addEventListener('click', function () {
+      var f = chip.getAttribute('data-filter');
+      chips.forEach(function (c) { c.setAttribute('aria-pressed', c === chip ? 'true' : 'false'); });
+      cards.forEach(function (card) {
+        card.hidden = !(f === 'all' || card.getAttribute('data-group') === f);
+      });
+    });
+  });
+
+  document.querySelectorAll('.copy').forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      var el = document.getElementById(btn.getAttribute('data-target'));
+      var text = el.textContent.trim();
+      function done() {
+        var old = btn.textContent;
+        btn.textContent = 'Copied';
+        setTimeout(function () { btn.textContent = old; }, 1600);
+      }
+      function fallback() {
+        try {
+          var r = document.createRange();
+          r.selectNodeContents(el);
+          var s = window.getSelection();
+          s.removeAllRanges();
+          s.addRange(r);
+        } catch (e) {}
+      }
+      try {
+        navigator.clipboard.writeText(text).then(done, fallback);
+      } catch (e) { fallback(); }
+    });
+  });
+})();
+</script>
+
+</body></html>
